@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PartidaCad">
+
+    <TextView
+        android:id="@+id/tv_titulo_partidacad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginRight="145dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/tv_titulo_partidacad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_desc_partida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_desc_partida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_partidacad" />
+
+    <EditText
+        android:id="@+id/et_desc_partida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="@string/et_desc_partida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc_partida" />
+
+    <TextView
+        android:id="@+id/tv_end_partida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_end_partida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_desc_partida" />
+
+    <EditText
+        android:id="@+id/et_end_partida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"
+        android:text="@string/et_end_partida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_end_partida" />
+
+    <TextView
+        android:id="@+id/tv_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_latitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_end_partida" />
+
+    <EditText
+        android:id="@+id/et_latitude"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"
+        android:text="@string/et_latitude"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_latitude" />
+
+    <TextView
+        android:id="@+id/tv_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_longitude"
+        app:layout_constraintStart_toEndOf="@+id/tv_latitude"
+        app:layout_constraintTop_toBottomOf="@+id/et_end_partida" />
+
+    <EditText
+        android:id="@+id/et_longitude"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"
+        android:text="@string/et_longitude"
+        app:layout_constraintStart_toEndOf="@+id/et_latitude"
+        app:layout_constraintTop_toBottomOf="@+id/tv_longitude" />
+
+    <TextView
+        android:id="@+id/tv_data_partida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_data_partida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_latitude" />
+
+    <TextView
+        android:id="@+id/tv_hora_partida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_hora_partida"
+        app:layout_constraintStart_toEndOf="@+id/tv_data_partida"
+        app:layout_constraintTop_toBottomOf="@+id/et_longitude" />
+
+    <EditText
+        android:id="@+id/et_data_partida"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"
+        android:text="@string/et_data_partida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_data_partida" />
+
+    <EditText
+        android:id="@+id/et_hora_partida"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"
+        android:text="@string/et_hora_partida"
+        app:layout_constraintStart_toEndOf="@+id/et_data_partida"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hora_partida" />
+
+    <Button
+        android:id="@+id/btn_salvar_partida"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/btn_salvar_partida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_data_partida" />
+
+    <Button
+        android:id="@+id/btn_limpar_partida"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/btn_limpar_partida"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_salvar_partida"
+        app:layout_constraintTop_toBottomOf="@+id/et_hora_partida" />
+
+    <Button
+        android:id="@+id/btn_voltar_partidacad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:text="@string/btn_voltar_partidacad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_salvar_partida" />
+
+    <Button
+        android:id="@+id/btn_coord_partidacad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_coord_partidacad"
+        app:layout_constraintStart_toEndOf="@+id/et_longitude"
+        app:layout_constraintTop_toBottomOf="@+id/tv_longitude" />
+</androidx.constraintlayout.widget.ConstraintLayout>

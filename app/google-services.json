@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "818854118144",
+    "firebase_url": "https://find-a-goalie.firebaseio.com",
+    "project_id": "find-a-goalie",
+    "storage_bucket": "find-a-goalie.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818854118144:android:e76dc5be5d2b267e9569e5",
+        "android_client_info": {
+          "package_name": "com.example.findagoalie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818854118144-9vin9aljhrtrdvn3s082gcrdci7kc5k2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.findagoalie",
+            "certificate_hash": "2eeb4cdf9ba65c81c83527b7a55e260a26dd902c"
+          }
+        },
+        {
+          "client_id": "818854118144-o023lkfnb8jkvg9f0k96148j9ft4c82j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0ZgWuWyVx12UYO-rg4452htF2bA_4gLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818854118144-o023lkfnb8jkvg9f0k96148j9ft4c82j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

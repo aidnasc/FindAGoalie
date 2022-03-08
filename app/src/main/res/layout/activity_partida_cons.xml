@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PartidaCons">
+
+    <TextView
+        android:id="@+id/tv_titulo_partidacons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginRight="145dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/tv_titulo_partidacons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_desc_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_desc_consulta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo_partidacons" />
+
+    <EditText
+        android:id="@+id/et_desc_consulta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="@string/et_desc_consulta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc_consulta" />
+
+    <TextView
+        android:id="@+id/tv_end_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_end_consulta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_desc_consulta" />
+
+    <EditText
+        android:id="@+id/et_end_consulta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"
+        android:text="@string/et_end_consulta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_end_consulta" />
+
+    <TextView
+        android:id="@+id/tv_lat_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_lat_consulta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_end_consulta" />
+
+    <EditText
+        android:id="@+id/et_lat_consulta"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"
+        android:text="@string/et_lat_consulta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lat_consulta" />
+
+    <TextView
+        android:id="@+id/tv_long_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_long_consulta"
+        app:layout_constraintStart_toEndOf="@+id/tv_lat_consulta"
+        app:layout_constraintTop_toBottomOf="@+id/et_end_consulta" />
+
+    <EditText
+        android:id="@+id/et_long_consulta"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"
+        android:text="@string/et_long_consulta"
+        app:layout_constraintStart_toEndOf="@+id/et_lat_consulta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_long_consulta" />
+
+    <Button
+        android:id="@+id/btn_mapa_partida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/btn_mapa_partida"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/et_long_consulta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_long_consulta" />
+
+    <TextView
+        android:id="@+id/tv_data_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_data_consulta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_lat_consulta" />
+
+    <EditText
+        android:id="@+id/et_data_consulta"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"
+        android:text="@string/et_data_consulta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_data_consulta" />
+
+    <TextView
+        android:id="@+id/tv_hora_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_hora_consulta"
+        app:layout_constraintStart_toEndOf="@+id/tv_data_consulta"
+        app:layout_constraintTop_toBottomOf="@+id/et_long_consulta" />
+
+    <EditText
+        android:id="@+id/et_hora_consulta"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"
+        android:text="@string/et_hora_consulta"
+        app:layout_constraintStart_toEndOf="@+id/et_data_consulta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hora_consulta" />
+
+    <Button
+        android:id="@+id/btn_voltar_partidacons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/btn_voltar_partidacons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_data_consulta" />
+
+    <TextView
+        android:id="@+id/tv_status_consulta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_status_consulta"
+        app:layout_constraintStart_toEndOf="@+id/tv_hora_consulta"
+        app:layout_constraintTop_toBottomOf="@+id/et_long_consulta" />
+
+    <EditText
+        android:id="@+id/et_status_consulta"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:clickable="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:inputType="textPersonName"
+        android:text="@string/et_status_consulta"
+        app:layout_constraintStart_toEndOf="@+id/et_hora_consulta"
+        app:layout_constraintTop_toBottomOf="@+id/tv_status_consulta" />
+
+    <Button
+        android:id="@+id/btn_atender_partidacons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/btn_atender_partidacons"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_data_consulta" />
+</androidx.constraintlayout.widget.ConstraintLayout>
